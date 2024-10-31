@@ -1,0 +1,44 @@
+/*  */
+body {
+  background-image: url(Imagenes/ImgPlaya.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-attachment: fixed;
+}
+  
+h1 {
+  text-align: center;
+}
+  
+.Contenido {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  background-color: rgba(86, 105, 214, 0.459);
+  padding: 30px;
+}
+  
+.caja {
+  flex: 1 1 30%;
+  text-align: center;
+  background-color: bisque;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box; 
+}
+  
+@media (max-width: 768px) {
+  .caja {
+    flex: 1 1 45%; 
+  }
+  
+  .caja:nth-child(3) {
+    flex: 1 1 100%; 
+  }
+}
+  
+@media (max-width: 480px) {
+  .caja {
+    flex: 1 1 100%;
+  }
+}
