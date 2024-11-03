@@ -1,3 +1,5 @@
+/* Modifique los colores, de ser necesario, e integre imágenes y elementos visuales
+que refuercen el objetivo de la entidad sin fines de lucro seleccionada por usted. */
 body {
     font-family: "Poppins", sans-serif;
     color: #333;
@@ -5,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /* Grid principal para el cuerpo */
 body {
     display: grid;
@@ -17,14 +20,16 @@ body {
     grid-template-rows: auto auto auto 1fr;
     min-height: 100vh;
 }
-    /* Estilos generales */
+    
+/* Estilos generales */
 header,
 section,
 footer {
     padding: 60px 20px;
     text-align: center;
 }
-    /* Estilos del header */
+    
+/* Estilos del header */
 header {
     grid-area: header;
     background-color: bisque;
@@ -39,7 +44,8 @@ header p {
     font-size: 1.2rem;
     opacity: 0.8;
 }
-    /* Estilos de la sección "Acerca de Nosotros" */
+    
+/* Estilos de la sección "Acerca de Nosotros" */
 #acerca-de {
     grid-area: acerca-de;
     color: #333;
@@ -50,14 +56,14 @@ header p {
 
     position: relative;
 }
-
 #acerca-de p {
     font-size: 1.1rem;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
 }
-    /* Estilos de la sección "Cómo Puedes Ayudar" */
+    
+/* Estilos de la sección "Cómo Puedes Ayudar" */
 #como-ayudar {
     grid-area: como-ayudar;
     background-color: bisque;
@@ -74,6 +80,7 @@ header p {
     margin: 0 auto;
     line-height: 1.8;
 }
+
 /* Estilos del footer */
 footer {
     background-color: #bea5a5;
@@ -88,6 +95,7 @@ footer p {
     font-size: 1rem;
     opacity: 0.8;
 }
+
 /* Flexbox para los elementos dentro de las secciones */
 section {
     display: flex;
@@ -95,6 +103,7 @@ section {
     align-items: center;
     justify-content: center;
 }
+
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
 body {
@@ -105,6 +114,8 @@ section,
 footer {
     padding: 40px 20px;
 }
+
+/* Estilos Formulario */
 }
 .FormularioButton {
     display: flex;
@@ -158,7 +169,8 @@ footer {
     background-color: #218838;
 }
 
-
+/* El formulario debe desaparecer y debe aparecer un enlace que lo lleve a
+una nueva página Web que tenga el formulario. */
 @media (max-width: 768px) {
     .FormularioContenido {
         display: none;
@@ -168,6 +180,8 @@ footer {
         display: block;
     }
 }
+
+/* Estilos 3 estimonios + Ajustar el tamaño  */
 .Contenido {
     display: flex;
     justify-content: space-between;
@@ -195,10 +209,7 @@ footer {
     }
   }
 
-
-
-
-
+/* Estilos 3 imagenes + Ajustar el tamaño  */
 .imagenes {
     display: flex;
     justify-content: space-between;
@@ -208,7 +219,6 @@ footer {
     margin: 20px;
     border-radius: 4px;
 }
-
 .imagen {
     flex: 1;
     background-color: bisque;
@@ -220,14 +230,11 @@ footer {
     margin: 5px;
     border-radius: 4px;
 }
-
 .imagen img {
     width: 100%;
     height: auto;
     border-radius: 4px;
 }
-
-
 @media (max-width: 768px) {
     .imagen {
         flex-basis: 100%;

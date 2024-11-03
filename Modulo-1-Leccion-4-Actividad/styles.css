@@ -6,6 +6,8 @@ body{
     background-attachment: fixed;
     background-size: 100% 100%;
 }
+
+/* aplicar un estilo único a un elemento específico */
 #titulo {
     padding: 35px;
     color: hsl(211, 100%, 35%);
@@ -14,6 +16,8 @@ body{
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/* Estiliza todos los elementos de párrafo */
 p {
     font-family: Arial, sans-serif;
     color: #333;
@@ -21,15 +25,20 @@ p {
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
 }
+/* Usa un selector de clase para cambiar el color de texto de algunos
+elementos de la lista */
+
 ul{
     list-style-position: inside;
     text-align: center;
     font-size: 30px;
 }
+
 .item1 {
     color: #994c19;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 .item2{
     color: rgb(139, 36, 36);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
